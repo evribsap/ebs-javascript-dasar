@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        const name = 'John';
+        const fristName = 'John';
+        const lastName = 'Doe';
+        const template = `Name : ${name}`;
+        const template2 = `Name : ${fristName} ${lastName}`;
+
+
+        console.info(template);
+        console.info(template2);
+
+        const nilai = 90;
+        const template3 = `Name : ${name} Lulus : ${nilai >= 95 ? 'Lulus' : 'Tidak Lulus'}`;
+        console.info(template3);
+
+        const nilai2 = 90;
+        const template4 = `Name : ${name} Lulus : ${nilai2 >= 95}`;
+        console.info(template4);
+    </script>
+</body>
+</html>
