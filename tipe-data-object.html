@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <script>
+        const person = {
+        "full name" : "Andi jon",
+        age : 30,
+        address : "Jl. Kebon Jeruk"
+        };
+
+        //ubah property person
+        //person["name"] = "Andi";
+        //person["age"] = 30;
+        //person["address"] = "Jl. Kebon Jeruk";
+
+        console.info(`Nama : ${person["full name"]}`);
+        console.info(`Umur : ${person.age}`);
+        console.info(`Alamat : ${person.address}`);
+
+        console.table(person);
+
+        // Menghapus index umur
+        delete person["age"];
+
+        console.table(person);
+
+    </script>
+</body>
+</html>
