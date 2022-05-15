@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+
+        /*
+        Operasi di Array
+        Operasi              | Keterangan
+        array.push()         | Menambahkan elemen baru pada array
+        array.length         | Menghasilkan panjang array
+        array[index]         | Mendapatkan data di posisi index
+        array[index] = value | Menyimpan data pada posisi index
+        delete array[index]  | Menghapus data pada posisi index
+        */
+
+        let arrayKosong = [];
+
+        let arrayNama = ["Andi", "Budi", "Caca"];
+
+        console.table(arrayNama);
+
+        const names = [];
+        names.push("Jon");
+        names.push("Doe");
+        names.push("Mikah", "Dede");
+        names.push("Siti", "Kino");
+
+        console.table(names);
+
+        names[0] = "Jodi";
+        names[1] = "Tasha";
+        names[2] = "Joni";
+
+        console.table(names);
+
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[2]);
+
+        delete names[3];
+
+        console.table(names);
+
+        names[3] = "Diisi lagi";
+        names.push(1,2,3,4,5,6,7,8,9,10);
+
+        //memasukan array kedalam array
+
+        names.push(["Evri", "Bagas", "Saputro"]);
+
+        console.table(names);
+
+
+    </script>
+</body>
+</html>
