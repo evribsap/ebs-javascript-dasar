@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <script>
+        let age = prompt("Enter your age");
+        let message;
+
+        if (age < 18) {
+            message = "You are not allowed to enter";
+        } else {
+            message = "Welcome";
+        }
+
+        document.writeln(`<h1>${message}</h1>`);
+
+        // Ternary Operator
+        message = age < 18 ? "You are a minor" : "You are an adult";
+        document.writeln(`<h1>${message}</h1>`);
+    </script>
+</body>
+</html>
