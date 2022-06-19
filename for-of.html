@@ -8,17 +8,15 @@
 </head>
 <body>
     <script>
-        const person = {
-            name: "John",
-            age: 30,
-            city: "New York"
-        };
-        for (const prop of Object.keys(person)) {
-            document.writeln(`<p>${prop}: ${person[prop]}</p>`);
+        const fullNames = "Evri Bagas Saputro";
+        for (const character of fullNames) {
+            document.writeln(`<p>${character}</p>`);
         }
+
+
         const names = ["John", "Jane", "Mary", "Mark"];
-        for(const index of names.keys()) {
-            document.writeln(`<p>${index} : ${names[index]}</p>`);
+        for(const name of names) {
+            document.writeln(`<p> ${name}</p>`);
         }
     </script>
 </body>
