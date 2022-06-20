@@ -9,6 +9,21 @@
 <body>
     <script>
         
+        const person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            }
+
+        // Tanpa with statement
+        console.log(person.firstName);
+        console.log(person.lastName);
+
+         // With statement
+        with (person) {
+            console.log(firstName);
+            console.log(lastName);
+        }
+    
     </script>
 </body>
 </html>
