@@ -15,6 +15,23 @@
 
         const result = sayHello("Evri", "Bagas");
         document.writeln(`<p>${result}</p>`);
+
+        function getFinalValue(value){
+            if (value >= 90) {
+                return "A";
+            } else if (value >=80) {
+                return "B";
+            } else if (value >= 70) {
+                return "C";
+            } else if (value >= 60) {
+                return "D";
+            } else {
+                return "F"
+            }
+        }
+
+        const finalValue = getFinalValue(91);
+        document.writeln(`<p>${finalValue}</p>`);
     </script>
 </body>
 </html>
